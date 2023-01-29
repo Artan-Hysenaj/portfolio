@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import Link from "next/link";
 import { Give_You_Glory } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 
@@ -20,6 +20,18 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={`${styles.title} ${poppins.className}`}>hello world</h1>
+        <ul>
+          <li>
+            <Link href="/work">Work</Link>
+          </li>
+          <li>
+            <Link href="/about">About</Link>
+          </li>
+
+          <li>
+            <Link href="/contact">Contact</Link>
+          </li>
+        </ul>
       </main>
     </>
   );
