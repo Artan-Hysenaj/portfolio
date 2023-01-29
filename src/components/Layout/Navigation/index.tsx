@@ -1,4 +1,3 @@
-type NavigationProps = {};
 const Navigation = () => {
   return <>Navigation</>;
 };

@@ -1,4 +1,3 @@
-type LayoutProps = {};
 const Layout = () => {
   return <>Layout</>;
 };

@@ -1,4 +1,3 @@
-type AboutProps = {};
 const About = () => {
   return <>About</>;
 };

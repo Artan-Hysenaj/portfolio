@@ -1,4 +1,3 @@
-type WorkProps = {};
 const Work = () => {
   return <>work page</>;
 };

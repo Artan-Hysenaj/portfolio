@@ -1,4 +1,3 @@
-type ContactProps = {};
 const Contact = () => {
   return <>Contact</>;
 };
