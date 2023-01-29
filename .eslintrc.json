@@ -12,7 +12,7 @@
     {
       "files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
       "rules": {
-        "storybook/hierarchy-seperator": "error"
+        "storybook/hierarchy-separator": "error"
       }
     }
   ],
