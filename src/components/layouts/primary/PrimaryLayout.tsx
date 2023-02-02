@@ -1,12 +1,12 @@
+import Footer from '@/components/navigation/footer/Footer';
+import Header from '@/components/navigation/header/Header';
 import Head from 'next/head';
+import styles from './PrimaryLayout.module.scss';
 
-export type PrimaryLayoutProps = {
-  justify?: 'items-center' | 'items-start';
-} & React.ComponentPropsWithoutRef<'div'>;
+export type PrimaryLayoutProps = React.ComponentPropsWithoutRef<'div'>;
 
 const PrimaryLayout: React.FC<PrimaryLayoutProps> = ({
   children,
-  justify = 'items-center',
   ...divProps
 }) => {
   return (
@@ -14,11 +14,11 @@ const PrimaryLayout: React.FC<PrimaryLayoutProps> = ({
       <Head>
         <title>NextJs Fullstack App Template</title>
       </Head>
-      <div {...divProps} className={`min-h-screen flex flex-col ${justify}`}>
-        {/* <Header /> */}
+      <div {...divProps} className={styles.layout}>
+        <Header />
         <main className="px-5">{children}</main>
         <div className="m-auto" />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );
