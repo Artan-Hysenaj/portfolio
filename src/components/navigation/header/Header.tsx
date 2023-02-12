@@ -1,6 +1,6 @@
 import cs from 'classnames';
 import Image from 'next/image';
-import Link from 'next/link';
+import NavLink from '../utils/navlink/NavLink';
 import styles from './Header.module.scss';
 export type HeaderProps = React.ComponentPropsWithoutRef<'nav'>;
 
@@ -17,16 +17,16 @@ const Header: React.FC<HeaderProps> = ({ ...headerProps }) => {
       />
       <ul>
         <li>
-          <Link href="/">Home</Link>
+          <NavLink href="/">Home</NavLink>
         </li>
         <li>
-          <Link href="/about">About</Link>
+          <NavLink href="/about">About</NavLink>
         </li>
         <li>
-          <Link href="/work">Work</Link>
+          <NavLink href="/work">work</NavLink>
         </li>
         <li>
-          <Link href="/contact">Contact</Link>
+          <NavLink href="/contact">Contact</NavLink>
         </li>
       </ul>
     </nav>
