@@ -1,4 +1,4 @@
-import PrimaryLayout from '@/components/layouts/primary/PrimaryLayout';
+import SecondaryLayout from '@/components/layouts/secondary/SecondaryLayout';
 import { NextPageWithLayout } from '../page';
 
 const About: NextPageWithLayout = () => {
@@ -8,5 +8,5 @@ const About: NextPageWithLayout = () => {
 export default About;
 
 About.getLayout = (page) => {
-  return <PrimaryLayout>{page}</PrimaryLayout>;
+  return <SecondaryLayout>{page}</SecondaryLayout>;
 };
