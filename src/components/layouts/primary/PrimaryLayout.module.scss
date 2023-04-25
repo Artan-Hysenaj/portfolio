@@ -4,7 +4,7 @@
   color: white;
   .showcase {
     background: $bg-image no-repeat center right / cover;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .header-content {

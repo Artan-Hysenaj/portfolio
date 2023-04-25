@@ -1,5 +1,6 @@
 import Footer from '@/components/navigation/footer/Footer';
 import Header from '@/components/navigation/header/Header';
+import Typewriter from '@/components/shared/Typewriter/Typewriter';
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from './PrimaryLayout.module.scss';
@@ -20,12 +21,8 @@ const PrimaryLayout: React.FC<PrimaryLayoutProps> = ({
           <Header />
           <div className={styles['header-content']}>
             <h1>
-              I Am Artan The...
-              <span
-                className={styles['txt-type']}
-                data-wait="3000"
-                data-words='["Photographer", "Designer", "UI/UX Dev"]'
-              ></span>
+              I Am Artan The{' '}
+              <Typewriter words={['Developer', 'Designer', 'Photographer']} />
             </h1>
             <p className="lead">
               I specialize in graphic design, UI/UX and photography
