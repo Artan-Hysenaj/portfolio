@@ -77,3 +77,39 @@ h4 {
     }
   }
 }
+
+.processes {
+  color: black;
+  .process {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+    text-align: center;
+
+    &-wrap {
+      margin: 1rem auto;
+      border-radius: 50%;
+      background: $dark-color;
+      color: set-text-color($dark-color);
+      padding: 2rem;
+      width: 140px;
+      height: 140px;
+      text-align: center;
+      position: relative;
+      transition: all 0.5s;
+
+      &-icon {
+        width: 70px;
+        height: 70px;
+        transition: all 0.5s;
+      }
+
+      &:hover {
+        .process-wrap-icon {
+          transform: scale(1.2);
+          color: $main-color;
+        }
+      }
+    }
+  }
+}

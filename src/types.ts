@@ -11,3 +11,9 @@ export type Specialization = {
   title: string;
   content: string;
 };
+
+export type Process = {
+  icon: IconProp;
+  title: string;
+  content: string;
+};
