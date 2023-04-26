@@ -1,4 +1,6 @@
 @import 'config';
+@import 'utilities';
+@import 'item_grid';
 
 * {
   box-sizing: border-box;
@@ -8,7 +10,7 @@
 
 body {
   line-height: 1.6;
-  background: #fff;
+  background: $light-color;
 }
 
 a {
@@ -26,205 +28,52 @@ h4 {
   text-transform: uppercase;
 }
 
-/* // utility classes */
-.container {
-  max-width: $website-width;
-  padding: 0 1.5rem;
-  margin: auto;
-  overflow: hidden;
-}
+// Home Sections
 
-.main {
-  min-height: calc(100vh - 166px);
-}
+// First section = home-a
+.specializations {
+  color: black;
+  .specials {
+    margin-top: 3rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
 
-.lead {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
-}
-
-.text-center {
-  text-align: center;
-}
-
-// Buttons
-%btn-shared {
-  display: inline-block;
-  padding: 0.8rem 2rem;
-  transition: all 0.3s;
-  border: none;
-  cursor: pointer;
-}
-
-.btn {
-  &-main {
-    @extend %btn-shared;
-    color: #333;
-    background-color: $main-color;
-  }
-
-  &-light {
-    @extend %btn-shared;
-    color: #333;
-    background-color: $light-color;
-  }
-
-  &-dark {
-    @extend %btn-shared;
-    color: #f4f4f4;
-    background-color: $dark-color;
-  }
-}
-
-button[class^='btn-']:hover,
-a[class^='btn-']:hover,
-input[class^='btn-']:hover {
-  background-color: $main-color;
-}
-
-// margin and padding
-$spaceAmounts: (1, 2, 3, 4, 5, 6, 7, 8, auto);
-
-@each $space in $spaceAmounts {
-  @if $space==auto {
-    .m-#{$space} {
-      margin: #{$space};
-    }
-
-    .mx-#{$space} {
-      margin-left: #{$space};
-      margin-right: #{$space};
-    }
-
-    .my-#{$space} {
-      margin-top: #{$space};
-      margin-bottom: #{$space};
-    }
-
-    .ml-#{$space} {
-      margin-left: #{$space};
-    }
-
-    .mr-#{$space} {
-      margin-right: #{$space};
-    }
-
-    .mb-#{$space} {
-      margin-bottom: #{$space};
-    }
-
-    .mt-#{$space} {
-      margin-top: #{$space};
-    }
-  } @else {
-    .m-#{$space} {
-      margin: #{$space}rem;
-    }
-
-    .mx-#{$space} {
-      margin-left: #{$space}rem;
-      margin-right: #{$space}rem;
-    }
-
-    .my-#{$space} {
-      margin-top: #{$space}rem;
-      margin-bottom: #{$space}rem;
-    }
-
-    .ml-#{$space} {
-      margin-left: #{$space}rem;
-    }
-
-    .mr-#{$space} {
-      margin-right: #{$space}rem;
-    }
-
-    .mb-#{$space} {
-      margin-bottom: #{$space}rem;
-    }
-
-    .mt-#{$space} {
-      margin-top: #{$space}rem;
-    }
-
-    .p-#{$space} {
-      padding: #{$space}rem;
-    }
-
-    .px-#{$space} {
-      padding-left: #{$space}rem;
-      padding-right: #{$space}rem;
-    }
-
-    .py-#{$space} {
-      padding-top: #{$space}rem;
-      padding-bottom: #{$space}rem;
-    }
-
-    .pl-#{$space} {
-      padding-left: #{$space}rem;
-    }
-
-    .pr-#{$space} {
-      padding-right: #{$space}rem;
-    }
-
-    .pb-#{$space} {
-      padding-bottom: #{$space}rem;
-    }
-
-    .pt-#{$space} {
-      padding-top: #{$space}rem;
+    .fas {
+      color: $main-color;
+      padding-bottom: 0.4rem;
     }
   }
 }
 
-// alignments
-$alignments: (
-  'center',
-  'space-between',
-  'space-around',
-  'space-evenly',
-  'flex-start',
-  'flex-end'
-);
+// Second section = home-b
+.stats {
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 
-@each $align in $alignments {
-  .justify-#{$align} {
-    justify-content: #{$align};
+  li {
+    line-height: 2;
+
+    &.stats-title {
+      font-size: 1.5rem;
+    }
+
+    &.stats-number {
+      font-size: 2rem;
+      font-weight: bold;
+    }
   }
 
-  .items-#{$align} {
-    align-items: #{$align};
-  }
+  div {
+    padding: 3rem 0;
 
-  .justify-items-#{$align} {
-    justify-items: #{$align};
-  }
+    &:nth-child(odd) {
+      background: $light-color;
+    }
 
-  .content-#{$align} {
-    align-content: #{$align};
-  }
-}
-
-// display
-$displayProps: (
-  'block',
-  'inline-block',
-  'inline',
-  'flex',
-  'grid',
-  'inline-flex',
-  'inline-grid',
-  'table',
-  'inline-table',
-  'list-item',
-  'none',
-  'contents'
-);
-
-@each $disp in $displayProps {
-  .#{$disp} {
-    display: #{$disp};
+    &:nth-child(even) {
+      background: $medium-color;
+    }
   }
 }

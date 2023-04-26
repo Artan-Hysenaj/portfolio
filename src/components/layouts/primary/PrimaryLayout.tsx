@@ -32,7 +32,7 @@ const PrimaryLayout: React.FC<PrimaryLayoutProps> = ({
             </Link>
           </div>
         </div>
-        <main className="px-5 main">{children}</main>
+        <main>{children}</main>
         <Footer />
       </div>
     </>
