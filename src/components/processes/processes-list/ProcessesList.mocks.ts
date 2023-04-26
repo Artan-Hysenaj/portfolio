@@ -1,7 +1,8 @@
+import { processes } from '@/dummy-data/processes';
 import { ProcessesListProps } from './ProcessesList';
 
 const base: ProcessesListProps = {
-  sampleTextProp: 'Hello World',
+  processes,
 };
 
 export const mockProcessesListProps = {
