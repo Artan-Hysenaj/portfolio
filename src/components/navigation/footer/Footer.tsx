@@ -22,6 +22,7 @@ const Footer: React.FC<FooterProps> = ({ ...footerProps }) => {
           >
             <FontAwesomeIcon icon={faTwitter} className={styles.fab} />
           </a>
+          
           <a
             href="https://www.facebook.com/artan.hysenaj.20000001"
             target="_blank"
