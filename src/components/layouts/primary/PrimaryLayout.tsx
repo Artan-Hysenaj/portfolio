@@ -1,6 +1,6 @@
 import Footer from '@/components/navigation/footer/Footer';
 import Header from '@/components/navigation/header/Header';
-import Typewriter from '@/components/shared/Typewriter/Typewriter';
+import Typewriter from '@/components/shared/typewriter/Typewriter';
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from './PrimaryLayout.module.scss';

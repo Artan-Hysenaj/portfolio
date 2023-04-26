@@ -3,7 +3,7 @@ import Typewriter, { TypewriterProps } from './Typewriter';
 import { mockTypewriterProps } from './Typewriter.mocks';
 
 export default {
-  title: 'Shared/Typewriter',
+  title: 'typewriter/Typewriter',
   component: Typewriter,
   argTypes: {},
 } as Meta<typeof Typewriter>;
