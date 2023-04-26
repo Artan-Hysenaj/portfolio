@@ -1,9 +1,9 @@
 import { Process } from '@/types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export type BaseTemplateProps = Process;
+export type ProcessesItemProps = Process;
 
-const BaseTemplate: React.FC<BaseTemplateProps> = ({
+const ProcessesItem: React.FC<ProcessesItemProps> = ({
   icon,
   title,
   content,
@@ -19,4 +19,4 @@ const BaseTemplate: React.FC<BaseTemplateProps> = ({
   );
 };
 
-export default BaseTemplate;
+export default ProcessesItem;

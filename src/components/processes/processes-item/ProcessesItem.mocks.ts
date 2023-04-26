@@ -1,9 +1,12 @@
-import { BaseTemplateProps } from './ProcessesItem';
+import { faIcons } from '@fortawesome/free-solid-svg-icons';
+import { ProcessesItemProps } from './ProcessesItem';
 
-const base: BaseTemplateProps = {
-  sampleTextProp: 'Hello World',
+const base: ProcessesItemProps = {
+  content: 'Hello World',
+  title: 'Hello World',
+  icon: faIcons,
 };
 
-export const mockBaseTemplateProps = {
+export const mockProcessesItemProps = {
   base,
 };

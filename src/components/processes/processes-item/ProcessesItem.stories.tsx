@@ -1,17 +1,17 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { mockBaseTemplateProps } from './ProcessesItem.mocks';
-import BaseTemplate, { BaseTemplateProps } from './ProcessesItem';
+import ProcessesItem, { ProcessesItemProps } from './ProcessesItem';
+import { mockProcessesItemProps } from './ProcessesItem.mocks';
 
 export default {
-  title: 'Templates/BaseTemplate',
-  component: BaseTemplate,
+  title: 'Templates/ProcessesItem',
+  component: ProcessesItem,
   argTypes: {},
-} as Meta<typeof BaseTemplate>;
+} as Meta<typeof ProcessesItem>;
 
-const Template: StoryFn<typeof BaseTemplate> = (args) => (
-  <BaseTemplate {...args} />
+const Template: StoryFn<typeof ProcessesItem> = (args) => (
+  <ProcessesItem {...args} />
 );
 
 export const Base = Template.bind({});
 
-Base.args = { ...mockBaseTemplateProps.base } as BaseTemplateProps;
+Base.args = { ...mockProcessesItemProps.base } as ProcessesItemProps;
