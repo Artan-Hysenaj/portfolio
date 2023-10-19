@@ -1,8 +1,8 @@
 import Footer from '@/components/navigation/footer/Footer';
 import Header from '@/components/navigation/header/Header';
-import Typewriter from '@/components/shared/typewriter/Typewriter';
 import Head from 'next/head';
 import Link from 'next/link';
+import Typewriter from '../../shared/typewriter/Typewriter';
 import styles from './PrimaryLayout.module.scss';
 
 export type PrimaryLayoutProps = React.ComponentPropsWithoutRef<'div'>;
