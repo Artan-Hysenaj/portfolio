@@ -10,6 +10,9 @@ export type TypewriterProps = {
   className?: string;
 };
 
+// eslint-disable-next-line no-undef
+let timer: NodeJS.Timeout;
+
 /**
  * Typewriter component that types and erases words
  * @param  {TypewriterProps} { words, className, typingDelay = 300, erasingDelay = 200, transitionDelay = 2000 } - Props
@@ -54,7 +57,8 @@ const Typewriter: React.FC<TypewriterProps> = ({
   }
 
   useEffect(() => {
-    setTimeout(type, 1000);
+    timer = setTimeout(type, 1000);
+    return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
