@@ -17,3 +17,30 @@ export type Process = {
   title: string;
   content: string;
 };
+
+export type Award = {
+  id: number;
+  title: string;
+  content: string;
+};
+
+export type Progress = {
+  id: number;
+  title: string;
+  value: number;
+};
+
+export type Testimonial = {
+  id: number;
+  src: string;
+  altText: string;
+  name: string;
+  city: string;
+  content: string;
+};
+
+export type Logo = {
+  id: number;
+  src: string;
+  altText: string;
+};
