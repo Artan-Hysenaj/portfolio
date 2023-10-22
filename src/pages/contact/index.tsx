@@ -58,17 +58,17 @@ const Contact: NextPageWithLayout = () => {
             <div>
               <i className="fas fa-envelope fa-2x"></i>
               <h3>Email</h3>
-              <p>john@something.com</p>
+              <p>artan.hysenaj@gmail.com</p>
             </div>
             <div>
               <i className="fas fa-phone fa-2x"></i>
               <h3>Phone</h3>
-              <p>(555) 555-5555</p>
+              <p>(+383) 049-427-936</p>
             </div>
             <div>
               <i className="fas fa-address-card fa-2x"></i>
               <h3>Address</h3>
-              <p>50 Main st, Boston MA</p>
+              <p>Pejë, Republic of Kosova</p>
             </div>
           </div>
         </div>

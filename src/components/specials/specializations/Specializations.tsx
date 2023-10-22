@@ -14,8 +14,8 @@ const Specializations: React.FC<SpecializationsProps> = ({
         <h2 className="section-title">I Specialize In</h2>
         <div className="bottom-line" />
         <p className="lead">
-          Photography as well as creating digital masterpieces and UI/UX layouts
-          for websites and mobile applications
+          Single Page Applications as well as creating other Web products and
+          complex layouts for websites governed by the latest standards.
         </p>
         <div className="specials">
           {specializations.map((special, index) => (

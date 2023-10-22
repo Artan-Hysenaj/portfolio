@@ -21,11 +21,20 @@ const PrimaryLayout: React.FC<PrimaryLayoutProps> = ({
           <Header />
           <div className={styles['header-content']}>
             <h1>
-              I Am Artan The{' '}
-              <Typewriter words={['Developer', 'Designer', 'Photographer']} />
+              <Typewriter
+                words={[
+                  'ReactJS',
+                  'TailwindCSS',
+                  'TypeScript',
+                  'NextJS',
+                  'JavaScript',
+                  'Redux',
+                ]}
+              />
             </h1>
             <p className="lead">
-              I specialize in graphic design, UI/UX and photography
+              I specialize in Web development, SPA applications and UI
+              manipulation.
             </p>
             <Link href="work" className="btn-light">
               View My Work
