@@ -2,8 +2,10 @@ import '@/styles/globals.scss';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { Dosis } from '@next/font/google';
+import { Analytics } from '@vercel/analytics/react';
 import type { AppProps } from 'next/app';
 import { NextPageWithLayout } from './page';
+
 config.autoAddCss = false;
 
 type AppPropsWithLayout = AppProps & {
@@ -25,6 +27,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
         }
       `}</style>
       <Component {...pageProps} />
+      <Analytics />
     </>
   );
 }
