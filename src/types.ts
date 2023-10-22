@@ -44,3 +44,11 @@ export type Logo = {
   src: string;
   altText: string;
 };
+
+export type Work = {
+  id: number;
+  src: string;
+  altText: string;
+  category: string;
+  title: string;
+};
