@@ -12,7 +12,7 @@ const ProcessesList: React.FC<ProcessesListProps> = ({ processes }) => {
         <h2 className="section-title">My Creative Process</h2>
         <div className="bottom-line"></div>
         <p className="lead">
-          All of my UI/UX and design projects are based off of a practiced
+          All of my projects are based off of a practiced
           formula to get the result that I am looking for
         </p>
         <div className="process">

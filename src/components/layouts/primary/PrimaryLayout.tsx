@@ -33,7 +33,7 @@ const PrimaryLayout: React.FC<PrimaryLayoutProps> = ({
               />
             </h1>
             <p className="lead">
-              I specialize in Web development, SPA applications and UI
+              ±±± I specialize in Web development, SPA applications and UI
               manipulation.
             </p>
             <Link href="work" className="btn-light">

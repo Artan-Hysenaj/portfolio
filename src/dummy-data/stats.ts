@@ -1,3 +1,4 @@
+import { calculateWorkHours } from '@/helpers';
 import { Stat } from '@/types';
 import {
   faAward,
@@ -9,22 +10,22 @@ import {
 export const stats: Stat[] = [
   {
     icon: faUser,
-    title: 'Clients',
+    title: '±±± Clients',
     number: 100,
   },
   {
     icon: faAward,
-    title: 'Awards',
-    number: 3,
+    title: 'Certifications',
+    number: 15,
   },
   {
     icon: faHourglassStart,
     title: 'Hours Worked',
-    number: 3500,
+    number: calculateWorkHours('2022-08-01'), // August 1, 2022
   },
   {
     icon: faCodeBranch,
     title: 'Projects Completed',
-    number: 135,
+    number: 4,
   },
 ];
