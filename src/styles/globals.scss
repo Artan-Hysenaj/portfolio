@@ -224,7 +224,8 @@ h4 {
       grid-template-areas:
         'name email'
         'subject phone'
-        'message message';
+        'message message'
+        'recaptcha recaptcha';
       grid-gap: 1.2rem;
       margin-bottom: 1.2rem;
 
@@ -245,9 +246,16 @@ h4 {
         grid-area: message;
         height: 100px;
       }
-
       .text-input {
         padding: 0.5rem 1rem;
+      }
+
+      .recaptcha-container {
+        grid-area: recaptcha;
+
+        div {
+          margin: auto;
+        }
       }
     }
 
