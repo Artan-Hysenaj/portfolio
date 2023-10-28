@@ -4,10 +4,10 @@ import { Fragment, useRef, useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { NextPageWithLayout } from '../page';
 
-const SERVICE_ID = process.env.EMAILJS_SERVICE_ID as string;
-const PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY as string;
-const TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID as string;
-const RE_CAPTCHA_KEY = process.env.RE_CAPTCHA_KEY as string;
+const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string;
+const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string;
+const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string;
+const RE_CAPTCHA_KEY = process.env.NEXT_PUBLIC_RE_CAPTCHA_KEY as string;
 
 const Contact: NextPageWithLayout = () => {
   const formRef = useRef<HTMLFormElement>(null);
