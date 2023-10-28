@@ -7,7 +7,7 @@ export type TestimonialsProps = {
 
 const Testimonials: React.FC<TestimonialsProps> = ({ data }) => {
   return (
-    <section id="about-d" className="py-4">
+    <section className="about-d py-4">
       <div className="container">
         <h2 className="section-title">Testimonials</h2>
         <div className="bottom-line"></div>

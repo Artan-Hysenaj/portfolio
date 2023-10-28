@@ -185,7 +185,7 @@ img {
 }
 
 // About Sections
-#about {
+.about {
   // About A
   &-a {
     .about-info {
@@ -200,8 +200,9 @@ img {
     // Grid Area
     .bio-image {
       grid-area: bioimage;
-      width: 100%;
+      width: 80%;
       height: auto;
+      margin-left: auto;
     }
 
     .bio {
@@ -227,6 +228,15 @@ img {
     .award-3 .fas {
       color: $main-color;
       margin: 1rem;
+    }
+
+    .award-links {
+      margin-left: 0.3rem;
+      cursor: pointer;
+      transition: opacity 0.1s;
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
   // About B
@@ -291,7 +301,7 @@ img {
 }
 
 // Contact Page
-#contact {
+.contact {
   &-a {
     .text-fields {
       display: grid;
@@ -326,7 +336,7 @@ img {
 
       .recaptcha-container {
         grid-area: recaptcha;
-
+        min-height: 60px;
         div {
           margin: auto;
         }
@@ -369,17 +379,18 @@ img {
   .social .fab {
     margin-right: 1rem;
     color: white;
-
     border: 2px #fff solid;
     border-radius: 50%;
-    padding: 0.5rem;
     height: 20px;
     width: 20px;
     line-height: 20px;
     text-align: center;
+    padding: 0.5rem;
 
     &:hover {
       background-color: $main-color;
     }
   }
 }
+
+@import 'media';

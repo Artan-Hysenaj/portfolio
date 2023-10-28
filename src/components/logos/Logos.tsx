@@ -7,7 +7,7 @@ export type LogosProps = {
 
 const Logos: React.FC<LogosProps> = ({ data }) => {
   return (
-    <section id="about-c" className="py-4 bg-light">
+    <section className="about-c py-4 bg-light">
       <div className="container">
         <div className="about-logos">
           {data.map((logo) => (

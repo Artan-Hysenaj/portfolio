@@ -22,6 +22,7 @@ export type Award = {
   id: number;
   title: string;
   content: string;
+  src: string;
 };
 
 export type Progress = {

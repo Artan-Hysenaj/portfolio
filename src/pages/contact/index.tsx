@@ -44,7 +44,7 @@ const Contact: NextPageWithLayout = () => {
   };
   return (
     <Fragment>
-      <section id="contact-a" className="text-center py-3">
+      <section className="contact-a text-center py-3">
         <div className="container">
           <h2 className="section-title">Contact Me</h2>
           <div className="bottom-line"></div>
@@ -85,10 +85,12 @@ const Contact: NextPageWithLayout = () => {
                 name="message"
                 required
               ></textarea>
-              <div className="recaptcha-container">
+              <div
+                className="recaptcha-container"
+                style={{ opacity: recaptchaLoaded ? 1 : 0.2 }}
+              >
                 <ReCAPTCHA
                   className="mx-auto"
-                  style={{ opacity: recaptchaLoaded ? 1 : 0.5 }}
                   ref={recaptchaRef}
                   sitekey={RE_CAPTCHA_KEY}
                   size="invisible"
@@ -106,7 +108,7 @@ const Contact: NextPageWithLayout = () => {
         </div>
       </section>
 
-      <section id="contact-b" className="py-3 bg-dark">
+      <section className="contact-b py-3 bg-dark">
         <div className="container">
           <div className="contact-info">
             <div>
@@ -128,7 +130,7 @@ const Contact: NextPageWithLayout = () => {
         </div>
       </section>
 
-      <section id="contact-c" className="bg-main py-4">
+      <section className="contact-c bg-main py-4">
         <div className="container">
           <h1>Let&apos;s Start Your Next Project</h1>
         </div>

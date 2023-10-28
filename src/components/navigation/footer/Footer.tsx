@@ -10,7 +10,7 @@ export type FooterProps = React.ComponentPropsWithoutRef<'footer'>;
 const Footer: React.FC<FooterProps> = ({ ...footerProps }) => {
   return (
     <footer {...footerProps} className="footer">
-      <div className="container footer-content">
+      <div className="footer-content container">
         <p>Copyright &copy; 2023. All Rights Reserved</p>
         <div className="social">
           <a

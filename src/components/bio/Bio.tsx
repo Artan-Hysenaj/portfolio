@@ -1,14 +1,15 @@
 import { Award } from '@/types';
+import { faAward, faExternalLink } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 
 export type BioProps = {
   awards: Award[];
 };
 
-// eslint-disable-next-line no-unused-vars
 const Bio: React.FC<BioProps> = ({ awards }) => {
   return (
-    <section id="about-a" className="text-center py-3">
+    <section className="about-a text-center py-3">
       <div className="container">
         <h2 className="section-title">About Me</h2>
         <div className="bottom-line"></div>
@@ -19,9 +20,9 @@ const Bio: React.FC<BioProps> = ({ awards }) => {
         <div className="about-info">
           <Image
             src="/about.jpg"
-            alt=""
-            width="400"
-            height="400"
+            alt="Profile picture"
+            width={400}
+            height={400}
             className="bio-image"
           />
           <div className="bio bg-light">
@@ -35,14 +36,22 @@ const Bio: React.FC<BioProps> = ({ awards }) => {
             </p>
           </div>
 
-          {/* // TODO: decide what to show for the awards */}
-          {/* {awards.map((award) => (
-          <div key={award.id} className={`award-${award.id}`}>
-            <i className="fas fa-award fa-3x"></i>
-            <h3>{award.title}</h3>
-            <p>{award.content}</p>
-          </div>
-        ))} */}
+          {awards.map((award) => (
+            <div key={award.id} className={`award-${award.id}`}>
+              <FontAwesomeIcon icon={faAward} className="fas fa-3x" />
+              <h3>
+                {award.title}
+                <a href={award.src} target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon
+                    icon={faExternalLink}
+                    size="xs"
+                    className="award-links"
+                  />
+                </a>
+              </h3>
+              <p>{award.content}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -7,7 +7,7 @@ export type ProgressBarsProps = {
 
 const ProgressBars: React.FC<ProgressBarsProps> = ({ data }) => {
   return (
-    <section id="about-b" className="bg-dark py-3">
+    <section className="about-b bg-dark py-3">
       <div className="container">
         <h2 className="section-title">Technical Skills</h2>
         <div className="bottom-line"></div>
