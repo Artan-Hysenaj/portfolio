@@ -1,7 +1,6 @@
 import Footer from '@/components/navigation/footer/Footer';
 import Header from '@/components/navigation/header/Header';
 import Head from 'next/head';
-import styles from './SecondaryLayout.module.scss';
 
 export type SecondaryLayoutProps = React.ComponentPropsWithoutRef<'div'>;
 
@@ -15,7 +14,7 @@ const SecondaryLayout: React.FC<SecondaryLayoutProps> = ({
         <title>NextJs Fullstack App Template</title>
       </Head>
       <div {...divProps}>
-        <div className={styles.showcase}>
+        <div className="header-inner">
           <Header />
         </div>
         <main className="main">{children}</main>

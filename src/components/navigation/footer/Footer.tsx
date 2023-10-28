@@ -5,44 +5,42 @@ import {
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import cs from 'classnames';
-import styles from './Footer.module.scss';
 export type FooterProps = React.ComponentPropsWithoutRef<'footer'>;
 
 const Footer: React.FC<FooterProps> = ({ ...footerProps }) => {
   return (
-    <footer {...footerProps} className={styles.footer}>
-      <div className={cs('container', styles['footer-content'])}>
+    <footer {...footerProps} className="footer">
+      <div className="container footer-content">
         <p>Copyright &copy; 2023. All Rights Reserved</p>
-        <div className={styles.social}>
+        <div className="social">
           <a
             href="https://twitter.com/artan_hysenaj"
             target="_blank"
             rel="noreferrer noopener"
           >
-            <FontAwesomeIcon icon={faTwitter} className={styles.fab} />
+            <FontAwesomeIcon icon={faTwitter} className="fab" />
           </a>
-          
+
           <a
             href="https://www.facebook.com/artan.hysenaj.20000001"
             target="_blank"
             rel="noreferrer noopener"
           >
-            <FontAwesomeIcon icon={faFacebook} className={styles.fab} />
+            <FontAwesomeIcon icon={faFacebook} className="fab" />
           </a>
           <a
             href="https://www.instagram.com/artan_hysenaj/"
             target="_blank"
             rel="noreferrer noopener"
           >
-            <FontAwesomeIcon icon={faInstagram} className={styles.fab} />
+            <FontAwesomeIcon icon={faInstagram} className="fab" />
           </a>
           <a
             href="https://www.linkedin.com/in/artan-hysenaj/"
             target="_blank"
             rel="noreferrer noopener"
           >
-            <FontAwesomeIcon icon={faLinkedin} className={styles.fab} />
+            <FontAwesomeIcon icon={faLinkedin} className="fab" />
           </a>
         </div>
       </div>

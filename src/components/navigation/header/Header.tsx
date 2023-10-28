@@ -1,13 +1,11 @@
-import cs from 'classnames';
 import Image from 'next/image';
 import NavLink from '../utils/navlink/NavLink';
-import styles from './Header.module.scss';
 
 export type HeaderProps = React.ComponentPropsWithoutRef<'nav'>;
 
 const Header: React.FC<HeaderProps> = ({ ...headerProps }) => {
   return (
-    <nav {...headerProps} className={cs('container', styles.navigation)}>
+    <nav {...headerProps} className="container main-nav">
       <Image
         src="/logo.png"
         alt="My Portfolio"
