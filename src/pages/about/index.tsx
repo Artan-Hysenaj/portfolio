@@ -13,12 +13,10 @@ import { Fragment } from 'react';
 const About: NextPageWithLayout = () => {
   return (
     <Fragment>
-      <section id="about-a" className="text-center py-">
-        <Bio awards={awards} />
-        <ProgressBars data={progresses} />
-        <Logos data={logos} />
-        <Testimonials data={testimonials} />
-      </section>
+      <Bio awards={awards} />
+      <ProgressBars data={progresses} />
+      <Logos data={logos} />
+      <Testimonials data={testimonials} />
     </Fragment>
   );
 };

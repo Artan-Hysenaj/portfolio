@@ -18,7 +18,7 @@ const SecondaryLayout: React.FC<SecondaryLayoutProps> = ({
         <div className={styles.showcase}>
           <Header />
         </div>
-        <main className="px-5 main">{children}</main>
+        <main className="main">{children}</main>
         <Footer />
       </div>
     </>
