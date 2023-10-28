@@ -3,22 +3,22 @@ import { Logo } from '@/types';
 export const logos: Logo[] = [
   {
     id: 1,
-    src: '/about-logos/logo-envato.png',
-    altText: 'Envato',
+    src: '/about-logos/logo-react.png',
+    altText: 'React logo',
   },
   {
     id: 2,
-    src: '/about-logos/logo-wordpress.png',
-    altText: 'Wordpress',
+    src: '/about-logos/logo-tailwindcss.png',
+    altText: 'TailwindCSS logo',
   },
   {
     id: 3,
-    src: '/about-logos/logo-woocommerce.png',
-    altText: 'WooCommerce',
+    src: '/about-logos/logo-nextjs.png',
+    altText: 'Next js logo',
   },
   {
     id: 4,
-    src: '/about-logos/logo-magento.png',
-    altText: 'Magento',
+    src: '/about-logos/logo-redux.png',
+    altText: 'Redux logo',
   },
 ];

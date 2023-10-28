@@ -5,6 +5,7 @@ export type BioProps = {
   awards: Award[];
 };
 
+// eslint-disable-next-line no-unused-vars
 const Bio: React.FC<BioProps> = ({ awards }) => {
   return (
     <div className="container">
@@ -33,13 +34,14 @@ const Bio: React.FC<BioProps> = ({ awards }) => {
           </p>
         </div>
 
-        {awards.map((award) => (
+        {/* // TODO: decide what to show for the awards */}
+        {/* {awards.map((award) => (
           <div key={award.id} className={`award-${award.id}`}>
             <i className="fas fa-award fa-3x"></i>
             <h3>{award.title}</h3>
             <p>{award.content}</p>
           </div>
-        ))}
+        ))} */}
       </div>
     </div>
   );

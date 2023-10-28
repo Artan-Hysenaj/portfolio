@@ -123,6 +123,7 @@ h4 {
         'bioimage bio bio'
         'aw1 aw2 aw3';
       grid-gap: 1.2rem;
+      margin-bottom: 1rem;
     }
 
     // Grid Area
@@ -182,7 +183,9 @@ h4 {
       grid-gap: 2rem;
 
       img {
-        width: 70%;
+        margin: auto;
+        width: 50%;
+        height: auto;
       }
     }
   }

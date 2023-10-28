@@ -15,8 +15,9 @@ const Logos: React.FC<LogosProps> = ({ data }) => {
               key={logo.id}
               src={logo.src}
               alt={logo.altText}
-              width={150}
-              height={60}
+              title={logo.altText}
+              width={200}
+              height={200}
             />
           ))}
         </div>
