@@ -40,6 +40,7 @@ const Contact: NextPageWithLayout = () => {
       })
       .finally(() => {
         setSendingEmail(false);
+        recaptchaRef.current?.reset();
       });
   };
   return (
