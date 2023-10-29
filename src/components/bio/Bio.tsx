@@ -27,13 +27,28 @@ const Bio: React.FC<BioProps> = ({ awards }) => {
           />
           <div className="bio bg-light">
             <h4>Your Project Is In Safe Hands</h4>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Perspiciatis nostrum, eaque velit ipsam facilis sed, quisquam
-              nesciunt unde nihil voluptatum commodi consequuntur molestiae?
-              Fugiat, perspiciatis reprehenderit. Architecto delectus vitae
-              deserunt!
-            </p>
+            <br />
+            <div className="bio-content">
+              <p>
+                👨‍💻 With over 1.5 years of experience, I&apos;m a passionate
+                React Developer dedicated to delivering innovative web
+                solutions.
+              </p>
+              <p>
+                💼 My Toolkit: ReactJS, NextJS, TailwindCSS, Redux Toolkit,
+                TypeScript, and a treasure chest of advanced JavaScript tools.
+              </p>
+              <p>
+                🌟 I believe in lifelong learning and approach each day as an
+                opportunity to acquire new knowledge and skills. By constantly
+                pushing my capabilities, I strive to stay ahead of industry
+                trends and deliver innovative solutions.
+              </p>
+              <p>
+                🌐 Let&apos;s connect and embark on this journey of continuous
+                growth and excellence in the world of web development!
+              </p>
+            </div>
           </div>
 
           {awards.map((award) => (
