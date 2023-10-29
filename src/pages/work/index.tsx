@@ -23,8 +23,8 @@ const Work: NextPageWithLayout = () => {
               </div>
               <div className="item-text">
                 <div className="item-text-wrap">
-                  <p className="item-text-category">Design</p>
-                  <h2 className="item-text-title">Great Gradients</h2>
+                  <p className="item-text-category">{item.category}</p>
+                  <h2 className="item-text-title">{item.title}</h2>
                 </div>
               </div>
             </div>
