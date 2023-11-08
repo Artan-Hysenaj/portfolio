@@ -21,5 +21,7 @@ const Home: NextPageWithLayout = () => {
 export default Home;
 
 Home.getLayout = (page) => {
-  return <PrimaryLayout title="Artan Hysenaj | Home">{page}</PrimaryLayout>;
+  return (
+    <PrimaryLayout title="Artan Hysenaj | Portfolio">{page}</PrimaryLayout>
+  );
 };
