@@ -28,7 +28,7 @@ export default function Document() {
           property="og:description"
           content="Hi, my name is Artan and welcome to my portfolio, a JavaScript and React.js developer from Kosova."
         />
-        <meta property="og:image" content="public/profile-meta.jpg" />
+        <meta property="og:image" content="/profile-meta.jpg" />
         <meta property="og:url" content="https://artan-hysenaj.vercel.app" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Artan Hysenaj's Portfolio" />
@@ -36,7 +36,7 @@ export default function Document() {
           name="twitter:description"
           content="Hi, my name is Artan and welcome to my portfolio, a JavaScript and React.js developer from Kosova."
         />
-        <meta name="twitter:image" content="public/profile-meta.jpg" />
+        <meta name="twitter:image" content="/profile-meta.jpg" />
       </Head>
       <body>
         <Main />
