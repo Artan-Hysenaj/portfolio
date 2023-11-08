@@ -143,5 +143,7 @@ const Contact: NextPageWithLayout = () => {
 export default Contact;
 
 Contact.getLayout = (page) => {
-  return <SecondaryLayout>{page}</SecondaryLayout>;
+  return (
+    <SecondaryLayout title="Artan Hysenaj | Contact">{page}</SecondaryLayout>
+  );
 };

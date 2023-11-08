@@ -4,16 +4,19 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Typewriter from '../../shared/typewriter/Typewriter';
 
-export type PrimaryLayoutProps = React.ComponentPropsWithoutRef<'div'>;
+export type PrimaryLayoutProps = React.ComponentPropsWithoutRef<'div'> & {
+  title: string;
+};
 
 const PrimaryLayout: React.FC<PrimaryLayoutProps> = ({
   children,
+  title,
   ...divProps
 }) => {
   return (
     <>
       <Head>
-        <title>NextJs Fullstack App Template</title>
+        <title>{title}</title>
       </Head>
       <div {...divProps} className="header-home">
         <Header />

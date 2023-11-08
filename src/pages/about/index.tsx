@@ -22,5 +22,7 @@ const About: NextPageWithLayout = () => {
 export default About;
 
 About.getLayout = (page) => {
-  return <SecondaryLayout>{page}</SecondaryLayout>;
+  return (
+    <SecondaryLayout title="Artan Hysenaj | About">{page}</SecondaryLayout>
+  );
 };

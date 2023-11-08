@@ -38,5 +38,5 @@ const Work: NextPageWithLayout = () => {
 export default Work;
 
 Work.getLayout = (page) => {
-  return <SecondaryLayout>{page}</SecondaryLayout>;
+  return <SecondaryLayout title="Artan Hysenaj | Work">{page}</SecondaryLayout>;
 };
